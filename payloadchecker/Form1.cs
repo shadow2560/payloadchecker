@@ -41,7 +41,7 @@ namespace payloadchecker
 
                 if (crc32BOOT0 == spacecraftv1)
                 {
-                    MessageBox.Show("Do NOT use on an OLED", "");
+                    MessageBox.Show("Spacecraft V1", "");
                 }
                 #endregion
                 #region spacecraft v2 check
@@ -54,7 +54,7 @@ namespace payloadchecker
 
                 if (crc32BOOT0_ == spacecraftv2)
                 {
-                    MessageBox.Show("Do use on an OLED", "");
+                    MessageBox.Show("Spacecraft V2", "");
                 }
                 #endregion
                 #region spacecraft v2 mod check
@@ -67,12 +67,12 @@ namespace payloadchecker
 
                 if (crc32BOOT0_Mod == spacecraftv2_mod)
                 {
-                    MessageBox.Show("Do use on an OLED", "");
+                    MessageBox.Show("Spacecraft V2 mod", "");
                 }
                 #endregion
                 if ((crc32BOOT0 != spacecraftv1) && (crc32BOOT0_ != spacecraftv2) && (crc32BOOT0_Mod != spacecraftv2_mod))
                 {
-                    MessageBox.Show("Unknown Payload/SX Payload?", "");
+                    MessageBox.Show("Unknown Payload or SX Payload", "");
                 }
 
                 ofd.Dispose();
